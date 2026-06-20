@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Workbook Practice Problems Engine</title>
 </head>
 
 <body>
-    <h1>Welcome to My App</h1>
-    <p>This is a simple web page.</p>
-</body>
+    <!-- Main Screen Page -->
+    <div id="main-screen" class="screen active">
+        <h1>Workbook Practice Problems Engine</h1>
+        <div class="json-dropbox" id="json-dropbox" onclick="document.getElementById('question-file-input').click()">
+            <p>Click here to browse and select a .json file</p>
+        </div>
+        <input type="file" id="question-file-input" accept=".json" style="display: none" />
+    </div>
 
+    <div id="screen-questions" class="screen">
+        <div id="questions-container"></div>
+        <!-- Navigation Row -->
+        <div class="navigation-row">
+            <button class="button-navigation" id="button-previous" onclick="navigate(-1)"> Previous </button>
+            <div style="text-align: center;">
+                <div class="navigation-text" id="navigation-text"> 1 / 0 </div>
+            </div>
+            <button class="button-navigation" id="button-next" onclick="navigate(1)"> Next </button>
+        </div>
+    </div>
+</body>
 </html>

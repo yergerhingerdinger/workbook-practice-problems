@@ -1,6 +1,112 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f6f4e8;
     margin: 0;
     padding: 20px;
+}
+
+/* Main Screen */
+#main-screen {
+    text-align: center;    
+}
+
+#json-dropbox {
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#json-dropbox:hover {
+    /* accent color */
+    border-color: #9baea4;
+    background: #c8d0c3;
+}
+
+/* Screens */
+.screen {
+    display: none; /* hides the screen */
+}
+
+.screen.active {
+    display: block; /* reveals the screen */
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.option {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 11px 14px;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option:hover {
+    border-color: #9baea4;
+    background: #c8d0c3;
+}
+
+.option.selected {
+    border-color:#0F6E56;
+    background: #E1F5EE;
+}
+
+/* Feedback */
+.feedback {
+    border: solid;
+    border-radius: 6px;    
+}
+
+.feedback.ok {
+    background: #EAF3DE;
+    color: #27500A;
+}
+
+.feedback.no {
+    background: #FCEBEB;
+    color: #D93900;
+}
+
+/* Submit Button */
+.button-submit:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* Navigation Row */
+.navigation-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-navigation {
+    border: 1px solid;    
+    cursor: pointer;
+}
+
+.navigation-text {
+    font-size: 13px;
+}
+
+/* Questions */
+.question-id {
+    border-radius: 20px;
+}
+
+.question-id.number {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+
+.question-text {
+    margin-bottom: 16px;
 }
