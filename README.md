@@ -9,3 +9,7 @@ An 'example.json' file is provided to show how the template is designed in case 
 - CSS
 - JavaScript
 - JSON
+
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/1cafab2a-c7ba-46ec-8283-e78796154741" />
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/6843e60f-b3cf-4f02-8eb1-a3c5f4e02f65" />
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/d61131d1-e9c0-42e1-b513-b6fcdc9b1cff" />
