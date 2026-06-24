@@ -53,10 +53,8 @@ function showQuestion() {
     const question = questions[index];
     const answer = answers[question.id]; //A6 or A7 for example
     const locked = answer;
-
-    if (question.type === 'single') {
-        showMultipleChoice(question, answer, locked, container);
-    }
+    
+    showMultipleChoice(question, answer, locked, container);     
 
     selectedOption = [];
     updateNavigation();
@@ -86,7 +84,10 @@ function showMultipleChoice(question, answer, locked, container) {
     }).join('');    
 
     let feedbackHTML, submitButtonHTML;
-    if (locked) {
+    // (TODO): Check if there are is an explanation for the answer in the json file.
+    //const explanation = !question.explanation ? "Correct Answer!" : question.explanation[answer.selected[0]];
+
+    if (locked) {        
         feedbackHTML = `<div class="feedback ${answer.correct ? 'ok' : 'no'}">
         <div>${answer.correct ? 'Correct' : 'Incorrect'}</div>
         <div>${question.explanation[answer.selected[0]]}</div>`

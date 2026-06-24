@@ -1,0 +1,55 @@
+{    
+    "questions": [
+        {
+            "id": "1",
+            "text": "2 + 2 = ?",
+            "type": "single",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct": [
+                3
+            ],
+            "explanation": [
+                "", "", "", ""
+            ]
+        },
+        {
+            "id": "2",
+            "text": "6 / 2 = ?",
+            "type": "single",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct": [
+                2
+            ],
+            "explanation": [
+                "", "", "", ""
+            ]
+        },
+        {
+            "id": "3",
+            "text": "4 * 4 = ?",
+            "type": "single",
+            "options": [
+                "16",
+                "18",
+                "12",
+                "8"
+            ],
+            "correct": [
+                0
+            ],
+            "explanation": [
+                "", "", "", ""
+            ]
+        }
+    ]
+}

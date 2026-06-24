@@ -11,9 +11,12 @@ body {
 }
 
 #json-dropbox {
+    background: white;
     border: solid;
     border-radius: 10px;
     cursor: pointer;
+    margin: auto;
+    max-width: 780px;
 }
 
 #json-dropbox:hover {
@@ -29,6 +32,12 @@ body {
 
 .screen.active {
     display: block; /* reveals the screen */
+}
+
+#screen-questions {
+    max-width: 780px;
+    margin: auto;    
+    margin-top: 50px;
 }
 
 /* Options */
@@ -59,6 +68,16 @@ body {
     background: #E1F5EE;
 }
 
+.option.correct.locked {
+    border-color:#0F6E56;
+    background: #E1F5EE;
+}
+
+.option.wrong.locked {
+    border-color:#D93900;
+    background: #FCEBEB;
+}
+
 /* Feedback */
 .feedback {
     border: solid;
@@ -79,6 +98,7 @@ body {
 .button-submit:disabled {
     opacity: 0.4;
     cursor: default;
+    margin-top: 6px;
 }
 
 /* Navigation Row */
@@ -98,6 +118,15 @@ body {
 }
 
 /* Questions */
+.question-card {    
+    padding: 10px;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);    
+    font-size: 24px;
+}
+
 .question-id {
     border-radius: 20px;
 }
