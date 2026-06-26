@@ -158,6 +158,7 @@ function submitOption(id) {
     showQuestion();
 }
 
+// Navigation
 function updateNavigation() {
     const totalQuestions = questions.length;    
     let current;
@@ -194,3 +195,11 @@ function navigate(direction) {
         showQuestion();
     }
 }
+
+document.addEventListener("keydown", function(event) { // Arrow presses to navigate
+    if (event.key == 'ArrowRight') {
+        navigate(1);
+    } else if (event.key == 'ArrowLeft') {
+        navigate(-1);
+    }
+});
